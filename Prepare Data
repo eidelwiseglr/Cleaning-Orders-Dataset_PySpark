@@ -1,0 +1,12 @@
+from pyspark.sql import (
+    SparkSession,
+    types,
+    functions as F,
+)
+
+spark = (
+    SparkSession
+    .builder
+    .appName('cleaning_orders_dataset_with_pyspark')
+    .getOrCreate()
+)
