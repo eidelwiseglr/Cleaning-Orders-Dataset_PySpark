@@ -1,0 +1,2 @@
+orders_data = spark.read.parquet('orders_data.parquet')
+orders_data.toPandas().head()
